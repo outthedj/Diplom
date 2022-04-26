@@ -2,6 +2,7 @@ package pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import staticdata.WebUrls;
 
@@ -14,10 +15,12 @@ public class LoginPage {
     private SelenideElement passwordInput = $(By.id("inputPassword"));
     private SelenideElement loginButton = $(By.id("btnLogin"));
 
+    @Step("Opening login page")
     public void openLoginPage() {
         open(WebUrls.LOGIN_URL);
     }
 
+    @Step("Trying to log in")
     public void login(String email, String password) {
         loginButton.shouldBe(Condition.enabled);
         emailInput.sendKeys(email);

@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -11,6 +12,7 @@ public class LoginTest extends BaseTest{
     private static final String PASSWORD = "1113444Out!";
 
     @Test
+    @Description("Check is login successful")
     public void loginTest() {
         LoginPage loginPage = new LoginPage();
         loginPage.openLoginPage();
