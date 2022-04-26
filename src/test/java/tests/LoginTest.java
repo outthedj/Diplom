@@ -11,7 +11,7 @@ public class LoginTest extends BaseTest{
     private static final String EMAIL = "outthedj@yopmail.com";
     private static final String PASSWORD = "1113444Out!";
 
-    @Test
+    @Test(priority = 1, description = "Test checks login")
     @Description("Check is login successful")
     public void loginTest() {
         LoginPage loginPage = new LoginPage();
