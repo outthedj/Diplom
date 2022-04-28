@@ -19,6 +19,6 @@ public class LoginTest extends BaseTest{
         loginPage.openLoginPage();
         loginPage.login(EMAIL, PASSWORD);
         ProjectsPage projectsPage = new ProjectsPage();
-        Assert.assertTrue(projectsPage.createNewProjectButtonIsEnabled());
+        Assert.assertFalse(projectsPage.createNewProjectButtonIsEnabled());
     }
 }
