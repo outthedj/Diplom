@@ -25,12 +25,6 @@ public class TestListeners implements ITestListener {
 
         System.out.println("Test ".concat(iTestResult.getName()).concat(" started"));
 
-
-        public byte[] takeScreenshot(WebDriverRunner.getWebDriver()) {
-            TakesScreenshot screenShot = ((TakesScreenshot) webDriverRunner);
-            return screenShot.getScreenshotAs(OutputType.BYTES);
-        }
-
     }
 
     @Override
