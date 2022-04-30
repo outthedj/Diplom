@@ -14,4 +14,9 @@ public class ProjectsPage {
     public boolean createNewProjectButtonIsEnabled() {
         return createNewProjectButton.isDisplayed();
     }
+
+    @Step
+    public void createNewProjectButtonClick() {
+        createNewProjectButton.click();
+    }
 }

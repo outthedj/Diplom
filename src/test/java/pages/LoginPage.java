@@ -21,10 +21,10 @@ public class LoginPage {
     }
 
     @Step("Trying to log in")
-    public void login(String email, String password) {
+    public void login() {
         loginButton.shouldBe(Condition.enabled);
-        emailInput.sendKeys(email);
-        passwordInput.sendKeys(password);
+        emailInput.sendKeys("outthedj@yopmail.com");
+        passwordInput.sendKeys("1113444Out!");
         loginButton.click();
     }
 }

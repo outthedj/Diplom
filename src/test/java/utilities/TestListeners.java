@@ -16,21 +16,21 @@ public class TestListeners implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult iTestResult) {
-
+        System.out.println("Test ".concat(iTestResult.getName()).concat(" started"));
     }
 
     @Attachment
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
 
-        System.out.println("Test ".concat(iTestResult.getName()).concat(" started"));
-
     }
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
 
-        makeScreenshot ("Success");
+        makeScreenshot ();
+        AllureService allureService = new AllureService();
+        allureService.takeScreenshot(driver);
     }
 
     @Override
@@ -54,7 +54,7 @@ public class TestListeners implements ITestListener {
     }
 
     @Attachment(value = "{0}", type = "image/png")
-    public byte[] makeScreenshot(String name) {
+    public byte[] makeScreenshot() {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }
