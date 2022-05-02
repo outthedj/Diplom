@@ -15,7 +15,7 @@ public class ProjectsPage {
         return createNewProjectButton.isDisplayed();
     }
 
-    @Step
+    @Step("Creating new project")
     public void createNewProjectButtonClick() {
         createNewProjectButton.click();
     }
