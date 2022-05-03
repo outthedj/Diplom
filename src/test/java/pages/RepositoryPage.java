@@ -17,6 +17,7 @@ public class RepositoryPage {
     private SelenideElement createCaseButton = $(By.id("create-case-button"));
     private SelenideElement caseCreated = $(By.xpath("//div[@class='style_itemCell-3gHZi style_title-3pZF1']"));
     private SelenideElement projectsButton = $(By.xpath("//span[contains(text(),'Projects')]"));
+    private SelenideElement logoutButton = $(By.xpath("//a[@href='https://app.qase.io/logout']"));
 
     @Step("Creating new project")
     public void createNewSuite() {
