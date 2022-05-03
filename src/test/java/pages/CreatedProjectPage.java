@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class CreatedProjectPage {
 
-    private SelenideElement nameOfNewProject = $(By.xpath("//p[@class='header']"));
+    private SelenideElement nameOfNewProject = $(By.xpath("//span[@class='alert-message']"));
 
     @Step("Checking that new project has been created")
     public boolean isNameOfNewProjectDisplayed() {

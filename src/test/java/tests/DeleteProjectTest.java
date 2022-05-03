@@ -13,7 +13,7 @@ public class DeleteProjectTest extends BaseTest{
     public void isDeletedProjectDisappears() {
         LoginPage loginPage = new LoginPage();
         loginPage.openLoginPage();
-        loginPage.login();
+        loginPage.login1();
         ProjectsPage projectsPage = new ProjectsPage();
         projectsPage.createNewProjectButtonClick();
         CreatePage createPage = new CreatePage();

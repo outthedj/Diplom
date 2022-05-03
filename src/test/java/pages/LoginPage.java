@@ -22,9 +22,17 @@ public class LoginPage {
 
     @Step("Trying to log in")
     public void login() {
-        loginButton.shouldBe(Condition.enabled);
         emailInput.sendKeys("outthedj@yopmail.com");
         passwordInput.sendKeys("1113444Out!");
+        loginButton.shouldBe(Condition.enabled);
+        loginButton.click();
+    }
+
+    @Step("Trying to log in")
+    public void login1() {
+        emailInput.sendKeys("outthedj1@yopmail.com");
+        passwordInput.sendKeys("1113444Out!");
+        loginButton.shouldBe(Condition.enabled);
         loginButton.click();
     }
 

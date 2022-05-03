@@ -22,7 +22,7 @@ public class NewProjectTest extends BaseTest{
         CreatePage createPage = new CreatePage();
         createPage.createNewProject();
         CreatedProjectPage createdProjectPage = new CreatedProjectPage();
-        createdProjectPage.isNameOfNewProjectDisplayed();
+
         Assert.assertTrue(createdProjectPage.isNameOfNewProjectDisplayed());
     }
 }

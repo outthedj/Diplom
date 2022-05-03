@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class BaseTest {
 
-    @BeforeSuite
+    @BeforeMethod
     @Parameters({"browser"})
     public void setUp() {
         Configuration.timeout = WebTimeouts.ELEMENT_LOAD_TIMEOUT;
@@ -17,7 +17,7 @@ public class BaseTest {
         Configuration.startMaximized = true;
     }
 
-    @AfterSuite(alwaysRun = true)
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         closeWebDriver();
     }
