@@ -27,4 +27,10 @@ public class LoginPage {
         passwordInput.sendKeys("1113444Out!");
         loginButton.click();
     }
+
+    @Step("Checking that logout was successful")
+    public boolean wasLogoutSuccessful() {
+        loginButton.shouldBe(Condition.enabled);
+        return loginButton.isDisplayed();
+    }
 }

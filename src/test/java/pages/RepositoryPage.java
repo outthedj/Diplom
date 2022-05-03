@@ -17,6 +17,7 @@ public class RepositoryPage {
     private SelenideElement createCaseButton = $(By.id("create-case-button"));
     private SelenideElement caseCreated = $(By.xpath("//div[@class='style_itemCell-3gHZi style_title-3pZF1']"));
     private SelenideElement projectsButton = $(By.xpath("//span[contains(text(),'Projects')]"));
+    private SelenideElement userMenu = $(By.id("user-menu"));
     private SelenideElement logoutButton = $(By.xpath("//a[@href='https://app.qase.io/logout']"));
 
     @Step("Creating new project")
@@ -52,5 +53,13 @@ public class RepositoryPage {
     public void clickOnProjectButton() {
         projectsButton.shouldBe(Condition.enabled);
         projectsButton.click();
+    }
+
+    @Step("Logouting")
+    public void makeLogout() {
+        userMenu.shouldBe(Condition.enabled);
+        userMenu.click();
+        logoutButton.shouldBe(Condition.enabled);
+        logoutButton.click();
     }
 }

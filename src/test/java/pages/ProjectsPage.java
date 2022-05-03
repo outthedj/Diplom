@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ProjectsPage {
 
-    private SelenideElement createNewProjectButton = $(By.id("createButton")); //a[contains(text(),'Delete')]
+    private SelenideElement createNewProjectButton = $(By.id("createButton"));
     private SelenideElement projectDropDown = $(By.xpath("//a[@class='btn btn-dropdown']"));
     private SelenideElement deleteProject = $(By.xpath("//a[contains(text(),'Delete')]"));
     private SelenideElement confirmDeleteProject = $(By.xpath("//button[@class='btn btn-cancel']"));
