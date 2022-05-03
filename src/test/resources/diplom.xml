@@ -17,7 +17,8 @@
             <class name="tests.CreateTestPlanTest"> </class>
             <class name="tests.CreateTestRunTest"> </class>
             <class name="tests.DeleteTestRunTest"> </class>
-            <parameter name="browser" value="chrome"></parameter>
+            <class name="tests.RenameSpaceTest"> </class>
+            <parameter name="browser" value="firefox"></parameter>
         </classes>
     </test> <!-- Test -->
 </suite>

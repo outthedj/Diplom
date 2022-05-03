@@ -14,6 +14,7 @@ public class ProjectsPage {
     private SelenideElement deleteProject = $(By.xpath("//a[contains(text(),'Delete')]"));
     private SelenideElement confirmDeleteProject = $(By.xpath("//button[@class='btn btn-cancel']"));
     private SelenideElement noProjects = $(By.xpath("//span[@class='no-project mt-4']"));
+    private SelenideElement workSpaceMenu = $(By.xpath("//span[contains(text(),'Workspace')]"));
 
     @Step("Checking is login successful")
     public boolean createNewProjectButtonIsEnabled() {
@@ -39,5 +40,11 @@ public class ProjectsPage {
     public boolean checkingNoProjects() {
         noProjects.shouldBe(Condition.enabled);
         return noProjects.isDisplayed();
+    }
+
+    @Step("Opening Workspace page")
+    public void clickOnWorkSpaceButton() {
+        workSpaceMenu.shouldBe(Condition.enabled);
+        workSpaceMenu.click();
     }
 }
