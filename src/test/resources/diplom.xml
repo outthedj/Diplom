@@ -12,6 +12,7 @@
             <class name="tests.NewProjectTest"> </class>
             <class name="tests.CreateSuiteTest"> </class>
             <class name="tests.CreateTestCaseTest"> </class>
+            <class name="tests.DeleteProjectTest"> </class>
             <parameter name="browser" value="chrome"></parameter>
         </classes>
     </test> <!-- Test -->

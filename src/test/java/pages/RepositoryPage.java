@@ -16,6 +16,7 @@ public class RepositoryPage {
     private SelenideElement suiteCreated = $(By.xpath("//a[@class='style_title-1ehyC']"));
     private SelenideElement createCaseButton = $(By.id("create-case-button"));
     private SelenideElement caseCreated = $(By.xpath("//div[@class='style_itemCell-3gHZi style_title-3pZF1']"));
+    private SelenideElement projectsButton = $(By.xpath("//span[contains(text(),'Projects')]"));
 
     @Step("Creating new project")
     public void createNewSuite() {
@@ -44,5 +45,11 @@ public class RepositoryPage {
     public boolean isCaseCreated() {
         caseCreated.shouldBe(Condition.enabled);
         return caseCreated.isDisplayed();
+    }
+
+    @Step("Opening projects")
+    public void clickOnProjectButton() {
+        projectsButton.shouldBe(Condition.enabled);
+        projectsButton.click();
     }
 }
