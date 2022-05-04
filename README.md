@@ -1,10 +1,10 @@
-Login
-Create new project
-Create new suite
-Create new test case
-Delete project
-Create test plan
-Create test run
-Delete test run
-Rename workspace
-Logout
+<p>Login<br>
+Create new project<br>
+Create new suite<br>
+Create new test case<br>
+Delete project<br>
+Create test plan<br>
+Create test run<br>
+Delete test run<br>
+Rename workspace<br>
+Logout</p>

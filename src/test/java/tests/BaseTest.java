@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class BaseTest {
 
     @BeforeMethod
-    @Parameters({"browser"})
     public void setUp() {
         Configuration.timeout = WebTimeouts.ELEMENT_LOAD_TIMEOUT;
         Configuration.baseUrl = WebUrls.LOGIN_URL;

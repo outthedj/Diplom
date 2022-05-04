@@ -18,7 +18,6 @@
             <class name="tests.CreateTestRunTest"> </class>
             <class name="tests.DeleteTestRunTest"> </class>
             <class name="tests.RenameSpaceTest"> </class>
-            <parameter name="browser" value="firefox"></parameter>
         </classes>
     </test> <!-- Test -->
 </suite>
