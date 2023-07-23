@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Diplom Regression Test" thread-count="2" parallel="classes">
+    <test name="test 1">
+        <groups>
+            <run>
+                <exclude name="excludeFailed"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.LoginTest"> </class>
+            <class name="tests.NewProjectTest"> </class>
+            <class name="tests.CreateSuiteTest"> </class>
+            <class name="tests.CreateTestCaseTest"> </class>
+            <class name="tests.DeleteProjectTest"> </class>
+            <class name="tests.LogoutTest"> </class>
+            <class name="tests.CreateTestPlanTest"> </class>
+            <class name="tests.CreateTestRunTest"> </class>
+            <class name="tests.DeleteTestRunTest"> </class>
+            <class name="tests.RenameSpaceTest"> </class>
+        </classes>
+    </test> <!-- Test -->
+</suite>
